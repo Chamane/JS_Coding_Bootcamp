@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JS Project</title>
+  <style>
+
+    #btn-play{
+      padding: 10px;
+      background: #aaa;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 8px;
+    }
+    #score{
+      float: right;
+      font-size: 40px;
+      color: red;
+      position: relative;
+      top: -40px;
+    }
+    #wrapper{
+      position: absolute;
+      left: 60vh;
+      top: 30px;
+      width: 500px;
+      height: 500px;
+    }
+    #board{
+      height: 500px;
+      width: 500px;
+      background-color: #3c538f;
+    }
+
+    #circle{
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      background-color: red;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <button id='btn-play'>Commencer</button>
+    <p id='score'>Score: 0</p>
+    <div id="board">
+      <div id="circle"></div>
+    </div>
+  </div>
+  <script src='app.js'></script>
+  <script src='main.js'></script>
+</body>
+</html>
